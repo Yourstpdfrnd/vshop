@@ -1,0 +1,43 @@
+:root {
+    --color_bg: #fff;
+    --color_black: #1b1b1b;
+    --color_orange: #f94f0d;
+    --color_orange-light: #f3946e;
+    --color_grey: #97a0ae;
+    --color_light: #dadce1;
+    --primary: #6979f8;
+    --primary-hover: #A5AFFB;
+    --color_secondary: #f5f5f5;
+    --grey_light: #fcfbfd;
+}
+
+body {
+    overflow: unset;
+    font-family: 'TT Norms', serif;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+.br-6 {
+    border-radius: 6px;
+}

@@ -1,0 +1,26 @@
+.delivery-order {
+    background-color: var(--grey_light);
+    padding: 24px;
+    border-radius: 20px;
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    &__top,
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px;
+    }
+
+    &__image {
+        max-height: 85px;
+    }
+}

@@ -1,0 +1,15 @@
+.a-input {
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+
+    &__textfield {
+      padding: 0 10px;
+      outline: none;
+    }
+}

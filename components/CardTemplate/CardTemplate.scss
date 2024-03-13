@@ -1,0 +1,97 @@
+.card-template {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        background: var(--color_light);
+        color: var(--color_grey);
+        padding: 10px;
+        // @media (max-width: 767px) {
+        //     display: none;
+        // }
+    }
+    
+    &__row {
+        border-bottom: 1px solid var(--color_light);
+
+        &-btns {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            // @media (max-width: 767px) {
+            //     display: flex;
+            // }
+        }
+
+        &-left {
+            display: flex;
+            align-items: center;
+        }
+
+        &-image {
+            max-height: 145px;
+        }
+        &-total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: auto;
+            span {
+                padding-left: 5px;
+            }
+            @media (max-width: 565px) {
+                span {
+                    display: none;
+                }
+            }
+           
+        }
+
+        &-info {
+            margin-left: 8px;
+            @media (max-width: 565px) {
+                font-size: 12px;
+            }
+        }
+
+        &-count {
+           text-align: center;
+        } 
+
+        &-counter {
+            padding: 3px;
+            justify-content: space-between;
+            border: 1px solid var(--color_light);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            max-width: fit-content;
+            margin: auto;
+
+            button {
+                margin: 0 10px;
+                padding: 10px 12px;
+            }
+            @media (max-width: 565px) {
+                flex-direction: column;
+                button {
+                    margin: 0 4px;
+                }
+                .button_custom {
+                    height: 25px;
+                    width: 25px;
+                    padding: 0;
+                }
+            }
+        }
+    
+    }
+
+    &__notify {
+        text-align: center;
+    }
+}
